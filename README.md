@@ -1,4 +1,4 @@
-My Wordle game project which i created when i was training my JavaScript skills.
+My Wordle game project which i created when i was enhancing my JavaScript skills.
 
 Project using word validiation and random valid word API's from words.dev-apis.com
 
