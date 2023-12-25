@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.loading{
+    height: 10vh;
+    padding-top: 50px;
+    padding-left: 48%;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.loading-title{
+    display: inline-block;
+    font-size: 50px;
+    animation: spin 0.9s infinite linear;
+    }
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding-bottom: 5px;
+    font-family: "Bebas-Neue",sans-serif;
+    font-size: 30px;
+
+    border-bottom: 1px solid black;
+}
+.word-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.word-box-container{
+    display: grid;   
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+.word-box{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    border: 3px solid rgba(208, 203, 203, 0.944); 
+     width: 50px;
+    height: 50px;
+}
+
+
+.true-word{
+    background-color: green;
+    color: white;
+}
+
+.true-but-wr{
+    background-color: orange;
+    color: white;
+}
+
+.wrong{
+    background-color: lightgray;
+    color: white;
+}
+
+.hidden{
+    visibility: hidden;
+}
